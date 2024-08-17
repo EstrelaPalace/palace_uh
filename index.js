@@ -1893,6 +1893,7 @@ const data = {
 
 function getData(){
   const savedData = JSON.parse(localStorage.getItem("uhData"))
+  console.log(savedData)
   if(!savedData) {
     alert("Informações não encontradas. Gerando dados a partir de valores padrão")
     return localStorage.setItem("uhData", JSON.stringify(data))
@@ -1900,7 +1901,7 @@ function getData(){
   return savedData
 }
 
-getData()
+
 function displayRoom(data){
   return (
     `
@@ -1988,7 +1989,7 @@ function createTelephoneStatus(data){
     <!-- TELEFONE -->
       <div class="card-div" style="padding: 10px; width: 22rem; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-radius: 2%;">
         <div style="display: flex; flex-direction: column; align-items: center;">
-        <img src="../Imagens/icons/telephone.svg" style="width: 200px; height:auto" >
+        <img src="./Imagens/icons/telephone.svg" style="width: 200px; height:auto" >
         <h3>TELEFONE</h3>
       </div>
       <ul>
