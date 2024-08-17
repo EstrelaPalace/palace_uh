@@ -1888,8 +1888,8 @@ const data = {
     }
 }
 
-localStorage.setItem("uhData", JSON.stringify(data))
-document.addEventListener("DOMContentLoaded", () => {})
+// localStorage.setItem("uhData", JSON.stringify(data))
+// document.addEventListener("DOMContentLoaded", () => {})
 
 function getData(){
   const savedData = JSON.parse(localStorage.getItem("uhData"))
