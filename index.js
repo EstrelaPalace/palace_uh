@@ -2060,8 +2060,9 @@ const li = document.querySelectorAll(".uh-link")
 li.forEach((link) => {
   link.addEventListener("click", (event) => { 
     const uhNumber = event.target.dataset.uhnumber
+    console.log(`uhNumber: ${uhNumber}`)
     const uhData = (savedData[`${uhNumber}`])
-    console.log(uhData)
+    console.log(`uhData: ${uhData}`)
     uhChoosed.innerHTML = `UH-${uhNumber} ( ${uhData.MODALIDADE} )`
     container.innerHTML = displayRoom(uhData)
   })
