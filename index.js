@@ -789,7 +789,7 @@ const data = {
     {
       "MODALIDADE": "STD",
       "ARCONDICIONADO": {
-        "CONTROLE": "0",
+        "CONTROLE": "VERIFICAR",
         "MARCA": "LG",
         "MODOS": "FRIO",
         "POSSUIAR": "SIM"
@@ -804,11 +804,12 @@ const data = {
       "SECADORES": {
         "POSSUISECADOR": "SIM",
         "VOLTAGEM": "220vh",
-        "CONDICAO": "FUNCIONA"
+        "CONDICAO": "FUNCIONA",
+        "MARCA" : "VERIFICAR"
       },
       "TELEFONE": {
-        "MARCA" : "0",
-        "MODELO" : "0",
+        "MARCA" : "VERIFICAR",
+        "MODELO" : "VERIFICAR",
         "RAMAL": "120",
         "POSSUITELEFONE":"SIM"
       },
@@ -817,10 +818,12 @@ const data = {
         "POSSUITV": "SIM",
         "POSSUICONTROLEDATV": "SIM",
         "POLEGADAS": "42",
-        "APARELHODEMIDIA": {
-          "MODELO":"CXBOX",
-          "POSSUICONTROLEDEMIDIA":"SIM"
-        }
+      },
+      "APARELHODEMIDIA": {
+        "MODELO":"CXBOX",
+        "POSSUICONTROLEDEMIDIA":"SIM",
+        "CONTA" : "4v6prp",
+        "SENHA" : "F7efw"
       }
     },
   "21" : 
@@ -1919,19 +1922,19 @@ function createArConditionerStatus(data) {
   return(
   `
     <!-- ARCONDICIONADO -->
-    <div class="card-div" style="padding: 10px; width: 22rem; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-radius: 2%;">
+    <div class="card-div" >
       <div style="display: flex; flex-direction: column; align-items: center;">
         <img src="./Imagens/icons/air-conditioner.svg" style="width: 200px; height:auto" >
-        <h3>ARCONDICIONADO</h3>
+        <p>ARCONDICIONADO</p>
       </div>
         <ul>
-          <li class="list-item"  style="font-size: 20px; list-style: circle">POSSUI AR</li>
+          <li class="list-item"  >POSSUI AR</li>
           <li class="list-value" style="font-size: 18px; list-style: none;">${data.ARCONDICIONADO.POSSUIAR}</li>
-          <li class="list-item"  style="font-size: 20px; list-style: circle">MARCA</li>
+          <li class="list-item"  >MARCA</li>
           <li class="list-value" style="font-size: 18px; list-style: none;">${data.ARCONDICIONADO.MARCA}</li>
-          <li class="list-item"  style="font-size: 20px; list-style: circle">MODOS</li>
+          <li class="list-item"  >MODOS</li>
           <li class="list-value" style="font-size: 18px; list-style: none;">${data.ARCONDICIONADO.MODOS}</li>
-          <li class="list-item"  style="font-size: 20px; list-style: circle">CONTROLE</li>
+          <li class="list-item"  >CONTROLE</li>
           <li class="list-value" style="font-size: 18px; list-style: none;">${data.ARCONDICIONADO.CONTROLE}</li>
         </ul>
     </div>
@@ -1942,19 +1945,19 @@ function createArConditionerStatus(data) {
 function createBedsStatus(data){
   return(`
     <!-- CAMAS -->
-    <div class="card-div" style="padding: 10px; width: 22rem; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-radius: 2%;">
+    <div class="card-div" >
     <div style="display: flex; flex-direction: column; align-items: center;">
       <img src="./Imagens/icons/bed.svg" style="width: 200px; height:auto" >
-      <h3>CAMAS</h3>
+      <p>CAMAS</p>
     </div>
       <ul>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">CAPACIDADE</li>
+        <li class="list-item"  >CAPACIDADE</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.CAMAS.CAPACIDADE}</li>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">BOX</li>
+        <li class="list-item"  >BOX</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.CAMAS.BOX}</li>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">QUEEN-SIZE</li>
+        <li class="list-item"  >QUEEN-SIZE</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.CAMAS.QUEENSIZE}</li>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">KING-SIZE</li>
+        <li class="list-item"  >KING-SIZE</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.CAMAS.KINGSIZE}</li>
       </ul>
     </div>
@@ -1965,19 +1968,19 @@ function createHairdryerStatus(data){
   console.log(data)
   return(`
     <!-- SECADORES -->
-      <div class="card-div" style="padding: 10px; width: 22rem; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-radius: 2%;">
+      <div class="card-div" >
         <div style="display: flex; flex-direction: column; align-items: center;">
           <img src="./Imagens/icons/hairdryer.svg" style="width: 200px; height:auto" >
-          <h3>SECADORES</h3>
+          <p>SECADORES</p>
         </div>
           <ul>
-            <li class="list-item"  style="font-size: 20px; list-style: circle">POSSUI SECADOR</li>
+            <li class="list-item"  >POSSUI SECADOR</li>
             <li class="list-value" style="font-size: 18px; list-style: none;">${data.SECADORES.POSSUISECADOR}</li>
-            <li class="list-item"  style="font-size: 20px; list-style: circle">MARCA</li>
+            <li class="list-item"  >MARCA</li>
             <li class="list-value" style="font-size: 18px; list-style: none;">${data.SECADORES.MARCA}</li>
-            <li class="list-item"  style="font-size: 20px; list-style: circle">CONDIÇÃO</li>
+            <li class="list-item"  >CONDIÇÃO</li>
             <li class="list-value" style="font-size: 18px; list-style: none;">${data.SECADORES.CONDICAO}</li>
-            <li class="list-item"  style="font-size: 20px; list-style: circle">VOLTAGEM</li>
+            <li class="list-item"  >VOLTAGEM</li>
             <li class="list-value" style="font-size: 18px; list-style: none;">${data.SECADORES.VOLTAGEM}</li>
           </ul>
       </div>
@@ -1987,19 +1990,19 @@ function createHairdryerStatus(data){
 function createTelephoneStatus(data){
   return(`
     <!-- TELEFONE -->
-      <div class="card-div" style="padding: 10px; width: 22rem; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-radius: 2%;">
+      <div class="card-div" >
         <div style="display: flex; flex-direction: column; align-items: center;">
         <img src="./Imagens/icons/telephone.svg" style="width: 200px; height:auto" >
-        <h3>TELEFONE</h3>
+        <p>TELEFONE</p>
       </div>
       <ul>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">POSSUI TELEFONE</li>
+        <li class="list-item"  >POSSUI TELEFONE</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.TELEFONE.POSSUITELEFONE}</li>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">RAMAL</li>
+        <li class="list-item"  >RAMAL</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.TELEFONE.RAMAL}</li>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">MARCA</li>
+        <li class="list-item"  >MARCA</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.TELEFONE.MARCA}</li>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">CONDIÇÃO</li>
+        <li class="list-item"  >CONDIÇÃO</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.TELEFONE.CONDIÇÃO}</li>
       </ul>
     </div>
@@ -2009,19 +2012,19 @@ function createTelephoneStatus(data){
 function createTvStatus(data){
   return(`
     <!-- TV -->
-      <div class="card-div" style="padding: 10px; width: 22rem; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-radius: 2%;">
+      <div class="card-div" >
         <div style="display: flex; flex-direction: column; align-items: center;">
         <img src="./Imagens/icons/tv.svg" style="width: 200px; height:auto" >
-        <h3>TELEVISÃO</h3>
+        <p>TELEVISÃO</p>
       </div>
       <ul>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">POSSUI TV</li>
+        <li class="list-item"  >POSSUI TV</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.TV.POSSUITV}</li>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">POSSUI CONTROLE</li>
+        <li class="list-item"  >POSSUI CONTROLE</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.TV.POSSUICONTROLEDATV}</li>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">MARCA</li>
+        <li class="list-item"  >MARCA</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.TV.MARCA}</li>
-        <li class="list-item"  style="font-size: 20px; list-style: circle">POLEGADAS</li>
+        <li class="list-item"  >POLEGADAS</li>
         <li class="list-value" style="font-size: 18px; list-style: none;">${data.TV.POLEGADAS}</li>
       </ul>
     </div>
@@ -2031,19 +2034,19 @@ function createTvStatus(data){
 function createMediaDeviceStatus(data){
   return(`
     <!-- APARELHO DE MIDIA -->
-      <div class="card-div" style="padding: 10px; width: 22rem; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-radius: 2%;">
+      <div class="card-div" >
         <div style="display: flex; flex-direction: column; align-items: center;">
         <img src="./Imagens/icons/remote-control.svg" style="width: 200px; height:auto" >
-        <h3>APARELHO DE MIDIA</h3>
+        <p>APARELHO DE MIDIA</p>
       </div>
         <ul>
-          <li class="list-item"  style="font-size: 20px; list-style: circle">MODELO</li>
+          <li class="list-item"  >MODELO</li>
           <li class="list-value" style="font-size: 18px; list-style: none;">${data.APARELHODEMIDIA.MODELO}</li>
-          <li class="list-item"  style="font-size: 20px; list-style: circle">POSSUI CONTROLE</li>
+          <li class="list-item"  >POSSUI CONTROLE</li>
           <li class="list-value" style="font-size: 18px; list-style: none;">${data.APARELHODEMIDIA.POSSUICONTROLEDEMIDIA}</li>
-          <li class="list-item"  style="font-size: 20px; list-style: circle">CONTA UNITV</li>
+          <li class="list-item"  >CONTA UNITV</li>
           <li class="list-value" style="font-size: 18px; list-style: none;">${data.APARELHODEMIDIA.CONTA}</li>
-          <li class="list-item"  style="font-size: 20px; list-style: circle">SENHA UNITV</li>
+          <li class="list-item"  >SENHA UNITV</li>
           <li class="list-value" style="font-size: 18px; list-style: none;">${data.APARELHODEMIDIA.SENHA}</li>
         </ul>
       </div>

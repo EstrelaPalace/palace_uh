@@ -59,12 +59,30 @@ article {
 }
 
 .card-div{
-  position: static;
+  padding: 10px; 
+  width: 22rem; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  background-color: #ffffff; 
+  border-radius: 2%;
   box-shadow: 1px 1px 10px 1px black;
 }
 
 .list-item{
+  font-size: 20px; 
+  list-style: circle;
   font-family: "Montserrat", sans-serif;
   background-color: #dfdbdb;
   color: #073637;
+}
+
+@media only screen and (min-width: 1400px) {
+  .card-div {
+    width: 18rem;
+  }
+  p {
+    font-weight: 600;
+    font-size: 20px;
+  }
 }
