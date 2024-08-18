@@ -1929,13 +1929,13 @@ function createArConditionerStatus(data) {
       </div>
         <ul>
           <li class="list-item"  >POSSUI AR</li>
-          <li class="list-value" style="font-size: 18px; list-style: none;">${data.ARCONDICIONADO.POSSUIAR}</li>
+          <li class="list-value" >${data.ARCONDICIONADO.POSSUIAR}</li>
           <li class="list-item"  >MARCA</li>
-          <li class="list-value" style="font-size: 18px; list-style: none;">${data.ARCONDICIONADO.MARCA}</li>
+          <li class="list-value" >${data.ARCONDICIONADO.MARCA}</li>
           <li class="list-item"  >MODOS</li>
-          <li class="list-value" style="font-size: 18px; list-style: none;">${data.ARCONDICIONADO.MODOS}</li>
+          <li class="list-value" >${data.ARCONDICIONADO.MODOS}</li>
           <li class="list-item"  >CONTROLE</li>
-          <li class="list-value" style="font-size: 18px; list-style: none;">${data.ARCONDICIONADO.CONTROLE}</li>
+          <li class="list-value" >${data.ARCONDICIONADO.CONTROLE}</li>
         </ul>
     </div>
     `
@@ -1952,13 +1952,13 @@ function createBedsStatus(data){
     </div>
       <ul>
         <li class="list-item"  >CAPACIDADE</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.CAMAS.CAPACIDADE}</li>
+        <li class="list-value" >${data.CAMAS.CAPACIDADE}</li>
         <li class="list-item"  >BOX</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.CAMAS.BOX}</li>
+        <li class="list-value" >${data.CAMAS.BOX}</li>
         <li class="list-item"  >QUEEN-SIZE</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.CAMAS.QUEENSIZE}</li>
+        <li class="list-value" >${data.CAMAS.QUEENSIZE}</li>
         <li class="list-item"  >KING-SIZE</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.CAMAS.KINGSIZE}</li>
+        <li class="list-value" >${data.CAMAS.KINGSIZE}</li>
       </ul>
     </div>
   `)
@@ -1975,13 +1975,13 @@ function createHairdryerStatus(data){
         </div>
           <ul>
             <li class="list-item"  >POSSUI SECADOR</li>
-            <li class="list-value" style="font-size: 18px; list-style: none;">${data.SECADORES.POSSUISECADOR}</li>
+            <li class="list-value" >${data.SECADORES.POSSUISECADOR}</li>
             <li class="list-item"  >MARCA</li>
-            <li class="list-value" style="font-size: 18px; list-style: none;">${data.SECADORES.MARCA}</li>
+            <li class="list-value" >${data.SECADORES.MARCA}</li>
             <li class="list-item"  >CONDIÇÃO</li>
-            <li class="list-value" style="font-size: 18px; list-style: none;">${data.SECADORES.CONDICAO}</li>
+            <li class="list-value" >${data.SECADORES.CONDICAO}</li>
             <li class="list-item"  >VOLTAGEM</li>
-            <li class="list-value" style="font-size: 18px; list-style: none;">${data.SECADORES.VOLTAGEM}</li>
+            <li class="list-value" >${data.SECADORES.VOLTAGEM}</li>
           </ul>
       </div>
   `)
@@ -1997,13 +1997,13 @@ function createTelephoneStatus(data){
       </div>
       <ul>
         <li class="list-item"  >POSSUI TELEFONE</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.TELEFONE.POSSUITELEFONE}</li>
+        <li class="list-value" >${data.TELEFONE.POSSUITELEFONE}</li>
         <li class="list-item"  >RAMAL</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.TELEFONE.RAMAL}</li>
+        <li class="list-value" >${data.TELEFONE.RAMAL}</li>
         <li class="list-item"  >MARCA</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.TELEFONE.MARCA}</li>
+        <li class="list-value" >${data.TELEFONE.MARCA}</li>
         <li class="list-item"  >CONDIÇÃO</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.TELEFONE.CONDIÇÃO}</li>
+        <li class="list-value" >${data.TELEFONE.CONDIÇÃO}</li>
       </ul>
     </div>
   `)
@@ -2019,13 +2019,13 @@ function createTvStatus(data){
       </div>
       <ul>
         <li class="list-item"  >POSSUI TV</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.TV.POSSUITV}</li>
+        <li class="list-value" >${data.TV.POSSUITV}</li>
         <li class="list-item"  >POSSUI CONTROLE</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.TV.POSSUICONTROLEDATV}</li>
+        <li class="list-value" >${data.TV.POSSUICONTROLEDATV}</li>
         <li class="list-item"  >MARCA</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.TV.MARCA}</li>
+        <li class="list-value" >${data.TV.MARCA}</li>
         <li class="list-item"  >POLEGADAS</li>
-        <li class="list-value" style="font-size: 18px; list-style: none;">${data.TV.POLEGADAS}</li>
+        <li class="list-value" >${data.TV.POLEGADAS}</li>
       </ul>
     </div>
   `)
@@ -2041,13 +2041,13 @@ function createMediaDeviceStatus(data){
       </div>
         <ul>
           <li class="list-item"  >MODELO</li>
-          <li class="list-value" style="font-size: 18px; list-style: none;">${data.APARELHODEMIDIA.MODELO}</li>
+          <li class="list-value" >${data.APARELHODEMIDIA.MODELO}</li>
           <li class="list-item"  >POSSUI CONTROLE</li>
-          <li class="list-value" style="font-size: 18px; list-style: none;">${data.APARELHODEMIDIA.POSSUICONTROLEDEMIDIA}</li>
+          <li class="list-value" >${data.APARELHODEMIDIA.POSSUICONTROLEDEMIDIA}</li>
           <li class="list-item"  >CONTA UNITV</li>
-          <li class="list-value" style="font-size: 18px; list-style: none;">${data.APARELHODEMIDIA.CONTA}</li>
+          <li class="list-value" >${data.APARELHODEMIDIA.CONTA}</li>
           <li class="list-item"  >SENHA UNITV</li>
-          <li class="list-value" style="font-size: 18px; list-style: none;">${data.APARELHODEMIDIA.SENHA}</li>
+          <li class="list-value" >${data.APARELHODEMIDIA.SENHA}</li>
         </ul>
       </div>
   `)

@@ -22,6 +22,10 @@ aside {
   background-color: #F7F7F7;
   color: #073637;
 }
+.logo{
+  width:300px; 
+  height: auto;
+}
 
 .uhs-list {
   width: 15rem;
@@ -41,7 +45,6 @@ aside {
 
 .uh-link:hover {
   color: darkgray;
-  text-decoration: underline;
 }
 
 article {
@@ -76,13 +79,39 @@ article {
   background-color: #dfdbdb;
   color: #073637;
 }
+.list-value{
+  font-size: 18px; 
+  list-style: none;
+}
 
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1300px) and (max-width:1400px){
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex: 1.5;
+    background-color: blue;
+  }
+  .logo{
+    width: 200px; 
+    height:auto;
+  }
+  .uh-link {
+    font-size: 15px;
+  }
   .card-div {
+    flex: 6;
     width: 18rem;
   }
   p {
     font-weight: 600;
     font-size: 20px;
+  }
+  .list-item {
+    font-size: 14px;
+  }
+  .list-value{
+    font-size: 14px;
   }
 }
