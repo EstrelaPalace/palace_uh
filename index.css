@@ -108,16 +108,16 @@ article {
   }
   p {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
   }
   .icon{
-    width: 170px; 
+    width: 200px; 
     height:auto;
   } 
   .list-item {
-    font-size: 14px;
+    font-size: 18px;
   }
   .list-value{
-    font-size: 14px;
+    font-size: 18px;
   }
 }
