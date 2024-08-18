@@ -110,6 +110,10 @@ article {
     font-weight: 600;
     font-size: 20px;
   }
+  .icon{
+    width: 170px; 
+    height:auto;
+  } 
   .list-item {
     font-size: 14px;
   }
