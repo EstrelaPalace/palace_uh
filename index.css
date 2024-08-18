@@ -71,7 +71,10 @@ article {
   border-radius: 2%;
   box-shadow: 1px 1px 10px 1px black;
 }
-
+.icon{
+  width: 200px;
+  height:auto;
+}
 .list-item{
   font-size: 20px; 
   list-style: circle;

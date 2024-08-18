@@ -1541,10 +1541,10 @@ const data = {
         "CAPACIDADE":"1 CAM CASAL + 1 SOLT"
       },
       "SECADORES": {
-        "POSSUISECADOR": "SIM",
-        "VOLTAGEM": "220vh",
-        "CONDICAO": "FUNCIONA",
-        "MARCA" : "VERIFICAR"
+        "POSSUISECADOR": "NÃO",
+        "VOLTAGEM": "-",
+        "CONDICAO": "NÃO POSSUI",
+        "MARCA" : "-"
       },
       "TELEFONE": {
         "MARCA" : "VERIFICAR",
@@ -1924,7 +1924,7 @@ function createArConditionerStatus(data) {
     <!-- ARCONDICIONADO -->
     <div class="card-div" >
       <div style="display: flex; flex-direction: column; align-items: center;">
-        <img src="./Imagens/icons/air-conditioner.svg" style="width: 200px; height:auto" >
+        <img src="./Imagens/icons/air-conditioner.svg" class="icon" >
         <p>ARCONDICIONADO</p>
       </div>
         <ul>
@@ -1947,7 +1947,7 @@ function createBedsStatus(data){
     <!-- CAMAS -->
     <div class="card-div" >
     <div style="display: flex; flex-direction: column; align-items: center;">
-      <img src="./Imagens/icons/bed.svg" style="width: 200px; height:auto" >
+      <img src="./Imagens/icons/bed.svg" class="icon" >
       <p>CAMAS</p>
     </div>
       <ul>
@@ -1970,7 +1970,7 @@ function createHairdryerStatus(data){
     <!-- SECADORES -->
       <div class="card-div" >
         <div style="display: flex; flex-direction: column; align-items: center;">
-          <img src="./Imagens/icons/hairdryer.svg" style="width: 200px; height:auto" >
+          <img src="./Imagens/icons/hairdryer.svg" class="icon" >
           <p>SECADORES</p>
         </div>
           <ul>
@@ -1992,7 +1992,7 @@ function createTelephoneStatus(data){
     <!-- TELEFONE -->
       <div class="card-div" >
         <div style="display: flex; flex-direction: column; align-items: center;">
-        <img src="./Imagens/icons/telephone.svg" style="width: 200px; height:auto" >
+        <img src="./Imagens/icons/telephone.svg" class="icon" >
         <p>TELEFONE</p>
       </div>
       <ul>
@@ -2014,7 +2014,7 @@ function createTvStatus(data){
     <!-- TV -->
       <div class="card-div" >
         <div style="display: flex; flex-direction: column; align-items: center;">
-        <img src="./Imagens/icons/tv.svg" style="width: 200px; height:auto" >
+        <img src="./Imagens/icons/tv.svg" class="icon" >
         <p>TELEVISÃO</p>
       </div>
       <ul>
@@ -2036,7 +2036,7 @@ function createMediaDeviceStatus(data){
     <!-- APARELHO DE MIDIA -->
       <div class="card-div" >
         <div style="display: flex; flex-direction: column; align-items: center;">
-        <img src="./Imagens/icons/remote-control.svg" style="width: 200px; height:auto" >
+        <img src="./Imagens/icons/remote-control.svg" class="icon" >
         <p>APARELHO DE MIDIA</p>
       </div>
         <ul>
